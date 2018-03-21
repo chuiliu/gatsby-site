@@ -1,7 +1,7 @@
 ---
 path: "/posts/my-second-post"
 date: "2018-03-20"
-title: "My second blog post"
+title: "Second post"
 tags: ["animals", "zoos"]
 ---
 

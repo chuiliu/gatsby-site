@@ -1,6 +1,6 @@
-import React from "react";
-import PostLink from "../components/post-link";
-import Link from "gatsby-link";
+import React from 'react';
+import PostLink from '../components/post-link';
+import Link from 'gatsby-link';
 
 const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => {
   const Posts = edges
@@ -20,7 +20,8 @@ export const pageQuery = graphql`
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            # date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY-MM-DD")
             path
             title
           }
