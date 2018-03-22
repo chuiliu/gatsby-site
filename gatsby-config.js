@@ -1,3 +1,4 @@
+const autoprefixer = require('autoprefixer');
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
@@ -48,5 +49,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-postcss-sass',
+      options: {
+        postCssPlugins: [autoprefixer({ browsers: ['last 6 version', 'Android >= 4.0'], remove: true })],
+        precision: 8, // SASS default: 5
+      },
+    },
   ],
 };
