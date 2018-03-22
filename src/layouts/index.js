@@ -4,9 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import './index.css'
-import 'prismjs/themes/prism.css'
-import './test.scss'
+import '../css/main.scss'
 
 const TemplateWrapper = ({ children }) => (
   <div>

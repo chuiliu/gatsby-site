@@ -12,5 +12,7 @@ gatsby new gatsby-example-site
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
+环境：node v6.13.1
+
 ## 代码高亮
 [gatsby-remark-prismjs](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-remark-prismjs#gatsby-remark-prismjs)
