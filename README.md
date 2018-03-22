@@ -1,6 +1,6 @@
 # gatsby-site
 
-基于[gatsby](https://github.com/gatsbyjs/gatsby-starter-default)搭建的网站
+基于[gatsby](https://github.com/gatsbyjs/gatsby-starter-default)搭建的静态网站
 
 运行环境：node v6.13.1
 
@@ -11,5 +11,3 @@
 ```bash
 sh new.sh 文章名称
 ```
-
-
