@@ -23,7 +23,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          YES
+          Arr
         </Link>
       </h1>
     </div>
