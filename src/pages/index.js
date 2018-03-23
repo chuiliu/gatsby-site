@@ -7,7 +7,10 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => {
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />);
 
-  return <div>{Posts}<Link to={'/tags'}>all tags</Link></div>;
+  return <div>
+    {Posts}
+    <Link to={'/tags'}>all tags</Link>
+  </div>;
 };
 
 export default IndexPage;
@@ -20,7 +23,6 @@ export const pageQuery = graphql`
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            # date(formatString: "MMMM DD, YYYY")
             date(formatString: "YYYY-MM-DD")
             path
             title
