@@ -1,4 +1,5 @@
 import React from "react";
+import Comment from '../components/Comment';
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -16,6 +17,7 @@ export default function Template({
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
+      <Comment />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
-import PostLink from '../components/post-link';
 import Link from 'gatsby-link';
+
+import PostLink from '../components/post-link';
 
 const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => {
   const Posts = edges
