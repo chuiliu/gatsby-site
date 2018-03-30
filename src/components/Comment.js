@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Gitment from 'gitment'
+
+import config from '../private-config.js';
 import 'gitment/style/default.css'
 
 class Comment extends Component {
@@ -14,8 +16,8 @@ class Comment extends Component {
             owner: 'chuiliu',
             repo: 'blog-gitment-comments',
             oauth: {
-                client_id: 'c752b53e245013a24360',
-                client_secret: 'e5497957550e9766d337cb496ce9784fa298fa01',
+                client_id: config.gitment.client_id,
+                client_secret: config.gitment.client_secret,
             },
         })
         gitment.render('gitment-wrapper')
