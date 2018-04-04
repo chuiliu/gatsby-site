@@ -8,21 +8,25 @@ a {
     color: #2196f3;
 }
 
-
-#___gatsby, #react-root {
+/* stick footer start */
+#___gatsby,
+#react-root {
     height: 100%;
 }
 .wrap {
     min-height: 100%;
 }
-
 .main {
     padding-bottom: $footer-height;
 }
-footer {
+.footer {
     margin-top: -$footer-height;
     height: $footer-height;
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
 }
+/* stick-footer end */
 
 .gatsby-highlight-code-line {
     background-color: #feb;
